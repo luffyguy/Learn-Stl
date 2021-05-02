@@ -1,0 +1,1 @@
+{"name":"Local: Strings_lexiographic_order","url":"e:\\Codes\\C++\\Learn\\Stl\\Maps\\Strings_lexiographic_order.cpp","tests":[{"id":1619949777741,"input":"8\nabc\ndef\nabc\nghj\njkl\nghj\nghj\nabc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Codes\\C++\\Learn\\Stl\\Maps\\Strings_lexiographic_order.cpp","group":"local","local":true}
