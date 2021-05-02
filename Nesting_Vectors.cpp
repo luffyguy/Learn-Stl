@@ -34,7 +34,7 @@ int main()
 
 //vector of arrays
 
-#include <bits/stdc++.h>
+/* #include <bits/stdc++.h>
 using namespace std;
 
 void printVec(vector<int> v)
@@ -69,6 +69,51 @@ int main()
     for (int i = 0; i < n; i++)
     {
         printVec(v[i]); //each vector goes in seperately to get printed
+    }
+
+    return 0;
+} */
+
+//vector of vector
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void printVec(vector<int> v)
+{
+    cout << "Size : " << v.size() << endl;
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+}
+
+int main()
+{
+
+    int n;
+    cin >> n;
+
+    vector<vector<int>> v;
+
+    for (int i = 0; i < n; i++)
+    {
+        int m;
+        cin >> m;
+        vector<int> temp; //using a temp vector
+        for (int j = 0; j < m; j++)
+        {
+            int x;
+            cin >> x;
+            temp.push_back(x);//saving values in temp vector
+        }
+        v.push_back(temp);//transvering values to v
+    }
+
+    for (int i = 0; i < v.size(); i++)
+    {
+        printVec(v[i]);
     }
 
     return 0;
